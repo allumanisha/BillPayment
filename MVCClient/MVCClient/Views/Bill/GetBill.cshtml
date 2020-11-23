@@ -1,0 +1,48 @@
+﻿@model MVCClient.Models.ViewModel.BillServices
+@{
+    ViewData["Title"] = "GetingBill";
+}
+
+<h1>Bill Details</h1>
+
+<p>
+    <h4>Bill Details</h4>
+    <h5>Here is your Bill Details Mr./Mrs @ViewBag.Username.</h5>
+    <h6>Thanks for choosing our service.</h6>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BillNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillAmt)
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+          <tr>
+                <td>
+                    @Html.DisplayFor(m =>m.BillNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>m.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>m.BillAmt)
+                </td>
+                <td><a asp-action="MakePayment" asp-controller="BillServices" asp-route-BillNo="@Model.BillNo"></a></td>
+              
+
+            </tr>
+      
+    </tbody>
+</table>

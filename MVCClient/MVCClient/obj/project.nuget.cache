@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XSdKWXi8ftoj0t3PYem+Q/F7wEok3Oi2Ndn2TM/94SeRMFZoQ/nhDhAnfbYfLGVX4LNg1PjQSQgRXH6fpPiG0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\source\\repos\\MVCClient\\MVCClient\\MVCClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
